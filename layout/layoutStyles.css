@@ -1,0 +1,73 @@
+header {
+    padding : 10px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.logo {
+    border: 1px black solid;
+}
+
+.navigationBar {
+    float: right;
+}
+
+.menus {
+    display: none;
+}
+
+main {
+    overflow: auto;
+    border: 1px solid black;
+}
+
+.filter {
+    float: left;
+    width: 24%;
+    /* border-right: 1px solid black;
+    height: 280px;
+    background-color : blue; */
+}
+
+.mainSection {
+    overflow: auto;
+    width: 75%;
+    float: right;
+    border-left : 1px solid black;
+}
+
+.card {
+    height: 70px;
+    border: 1px solid black;
+    margin: 10px;
+    float: left;
+    list-style-type: none;
+}
+
+footer {
+    height: 70px;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 500px) {
+    .filter {
+        display: none;
+    }
+
+    .menus {
+        display: block;
+        float: right;
+    }
+
+    .navigationBar {
+        display: none;
+    }
+
+    .mainSection {
+        width: 100%;
+    }
+
+    .card {
+        width: 40%;
+    }
+}
