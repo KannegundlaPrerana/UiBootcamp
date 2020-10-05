@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        sample Layout
+    </title>
+    <style>
+        header {
+            padding : 10px;
+            height: 40px;
+            border: 1px solid black;
+        }
+
+        .logo {
+            border: 1px black solid;
+        }
+
+        .navigationBar {
+            float: right;
+        }
+
+        .menus {
+            display: none;
+        }
+
+        main {
+            overflow: auto;
+            border: 1px solid black;
+        }
+
+        .filter {
+            float: left;
+            width: 24%;
+            /* border-right: 1px solid black;
+            height: 280px;
+            background-color : blue; */
+        }
+
+        .mainSection {
+            overflow: auto;
+            width: 75%;
+            float: right;
+            border-left : 1px solid black;
+        }
+
+        .card {
+            height: 70px;
+            width: 15%;
+            border: 1px solid black;
+            margin: 10px;
+            float: left;
+        }
+
+        footer {
+            height: 70px;
+            border: 1px solid black;
+        }
+
+        @media only screen and (max-width: 500px) {
+            .filter {
+                display: none;
+            }
+
+            .menus {
+                display: block;
+                float: right;
+            }
+
+            .navigationBar {
+                display: none;
+            }
+
+            .mainSection {
+                width: 100%;
+            }
+
+            .card {
+                width: 40%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="" width=5% height=40% />
+
+        <nav class="navigationBar">
+            <button>Menu1</button>
+            <button>Menu2</button>
+            <button>Menu3</button>
+            <button>Menu4</button>
+        </nav>
+
+        <button class="menus"> Menus </button>
+    </header>
+    <main>
+        <aside class="filter">
+            filter
+        </aside>
+        <section class="mainSection">
+            <div class="card">product card </div>
+            <div class="card">product card </div>
+            <div class="card">product card </div>
+            <div class="card">product card </div>
+            <div class="card">product card </div>
+            <div class="card">product card </div>
+            <div class="card">product card </div>
+            <div class="card">product card </div>
+            <div class="card">product card </div>
+            <div class="card">product card </div>
+            <div class="card">product card </div>
+            <div class="card">product card </div>
+            <div class="card">product card </div>
+            <div class="card">product card </div>
+            <div class="card">product card </div>
+        </section>
+    </main>
+    <footer>
+        Footer
+    </footer>
+</body>
+
+</html>
